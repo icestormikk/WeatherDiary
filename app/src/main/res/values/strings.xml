@@ -1,0 +1,59 @@
+<resources>
+    <!-- Common -->
+    <string name="app_name" translatable="false">WeatherDiary</string>
+    <string name="wind_direction_north">North</string>
+    <string name="wind_direction_northeast">Northeast</string>
+    <string name="wind_direction_east">East</string>
+    <string name="wind_direction_southeast">Southeast</string>
+    <string name="wind_direction_south">South</string>
+    <string name="wind_direction_southwest">Southwest</string>
+    <string name="wind_direction_west">West</string>
+    <string name="wind_direction_northwest">Northwest</string>
+    <string name="weather_event_rain">Rain</string>
+    <string name="weather_event_snow">Snow</string>
+    <string name="weather_event_thunderstorm">Thunderstorm</string>
+    <string name="clouds_cover_type_low">Small clouds</string>
+    <string name="clouds_cover_type_medium">A few clouds</string>
+    <string name="clouds_cover_type_many">Lots of clouds</string>
+    <string name="clouds_cover_type_clear">Clear</string>
+    <!-- Weather Note Card Layout -->
+    <string name="layout_weather_note_card_temperature">Temperature: </string>
+    <string name="layout_weather_note_card_pressure">Atmospheric pressure: </string>
+    <string name="layout_weather_note_card_wind_direction">Wind direction: </string>
+    <string name="layout_weather_note_card_wind_velocity">Wind velocity: </string>
+    <!-- Home Fragment -->
+    <string name="fragment_home_title">All Weather Notes</string>
+    <string name="fragment_home_filter_button_label">Filter</string>
+    <string name="fragment_home_apply_filter_button_label">Apply filter</string>
+    <string name="fragment_home_clear_filter_button_label">Clear</string>
+    <string name="fragment_home_lower_border_text">Specify the left border of the date interval</string>
+    <string name="fragment_home_high_border_text">Specify the right border of the date interval</string>
+    <string name="fragment_home_date_interval_error">The left border of the date interval cannot be larger than the right one</string>
+    <string name="fragment_home_list_none_variant">None</string>
+    <string name="fragment_home_collect_statistics_button_label">Collect statistics for the last month</string>
+    <!-- Edit Weather Note Fragment -->
+    <string name="fragment_edit_weather_note_title">Weather Note</string>
+    <string name="fragment_edit_weather_note_timestamp">Timestamp: </string>
+    <string name="fragment_edit_weather_note_temperature">Current temperature: </string>
+    <string name="fragment_edit_weather_note_temperature_placeholder">Enter the current temperature</string>
+    <string name="fragment_edit_weather_note_pressure">Atmospheric pressure: </string>
+    <string name="fragment_edit_weather_note_pressure_placeholder">Enter the atmospheric pressure value</string>
+    <string name="fragment_edit_weather_note_non_negative_error">You cannot enter negative or empty values in these fields</string>
+    <string name="fragment_edit_weather_note_unknown_type_error">An unknown data type is selected</string>
+    <string name="fragment_edit_weather_note_clouds">Cloud cover level: </string>
+    <string name="fragment_edit_weather_note_weather_type">Weather phenomena: </string>
+    <string name="fragment_edit_weather_note_wind_velocity">Wind speed: </string>
+    <string name="fragment_edit_weather_note_wind_velocity_placeholder">Enter the current wind speed</string>
+    <string name="fragment_edit_weather_note_wind_direction">Wind direction: </string>
+    <string name="fragment_edit_weather_note_create_note">Add Weather Note</string>
+    <string name="fragment_edit_weather_note_update_note">Update Weather Note</string>
+    <string name="fragment_edit_weather_note_delete_note">Delete</string>
+    <!-- Statistics Fragment -->
+    <string name="fragment_statistics_title">Statistics</string>
+    <string name="fragment_statistics_period_title">Weather statistics for the period:\n%1$s - %2$s</string>
+    <string name="fragment_statistics_no_data">Out of data</string>
+    <string name="fragment_statistics_average_temperature">Average temperature: </string>
+    <string name="fragment_statistics_average_pressure">Average pressure: </string>
+    <string name="fragment_statistics_wind_rose">Wind rose: </string>
+    <string name="fragment_statistics_wind_rose_legend">The number of days when the wind blew in this direction</string>
+</resources>

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/home_fragment">
+
+    <fragment
+        android:id="@+id/home_fragment"
+        android:name="com.sasha.weatherdiary.ui.HomeFragment"
+        android:label="@string/fragment_home_title"
+        tools:layout="@layout/fragment_home">
+        <action
+            android:id="@+id/action_home_fragment_to_edit_weather_note_fragment"
+            app:destination="@id/edit_weather_note_fragment" />
+        <action
+            android:id="@+id/action_home_fragment_to_statisticsFragment"
+            app:destination="@id/statisticsFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/edit_weather_note_fragment"
+        android:name="com.sasha.weatherdiary.ui.EditWeatherNoteFragment"
+        android:label="@string/fragment_edit_weather_note_title"
+        tools:layout="@layout/fragment_edit_weather_note" >
+        <argument
+            android:name="editableWeatherNote"
+            app:argType="com.sasha.weatherdiary.domain.WeatherNote"
+            app:nullable="true"
+            android:defaultValue="@null" />
+        <action
+            android:id="@+id/action_edit_weather_note_fragment_to_home_fragment"
+            app:destination="@id/home_fragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/statisticsFragment"
+        android:name="com.sasha.weatherdiary.ui.StatisticsFragment"
+        android:label="@string/fragment_statistics_title"
+        tools:layout="@layout/fragment_statistics" />
+</navigation>
